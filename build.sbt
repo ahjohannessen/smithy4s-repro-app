@@ -15,10 +15,12 @@ lazy val app = project
   .in(file("app"))
   .settings(
     libraryDependencies ++= Seq(
-      "io.github.ahjohannessen" %% "s4s-lib" % s4sLibVersion,
+      "org.typelevel" %% "cats-effect" % "3.4.2",
       "com.disneystreaming.smithy4s" %% "smithy4s-core" % smithy4sVersion.value,
+      "io.github.ahjohannessen" %% "s4s-lib" % s4sLibVersion,
       "io.github.ahjohannessen" % "s4s-app" % s4sAppVersion % Smithy4s
     )
+
     //
     // ,
     // libraryDependencies +=
@@ -27,4 +29,5 @@ lazy val app = project
     //
     // , libraryDependencies +=
     //   "io.github.ahjohannessen" % "s4s-lib-specs" % s4sLibVersion % Smithy4s
+
   )
