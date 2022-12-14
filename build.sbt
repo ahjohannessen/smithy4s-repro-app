@@ -1,6 +1,6 @@
 val Scala3 = "3.2.1"
 
-val s4sLibVersion = "0.1.1"
+val s4sLibVersion = "0.1.2"
 val s4sAppVersion = "0.1.1"
 
 ThisBuild / scalaVersion := Scala3
